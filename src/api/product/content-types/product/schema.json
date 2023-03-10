@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "product": {
+    "title": {
       "type": "string",
       "required": true,
       "unique": true
@@ -22,12 +22,12 @@
       "required": true
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "price": {
       "type": "float",
@@ -35,8 +35,8 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "product",
-      "required": true
+      "required": true,
+      "targetField": "title"
     }
   }
 }
